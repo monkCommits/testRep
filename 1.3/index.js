@@ -24,5 +24,6 @@ function trim(string) {
 // replace
 // toUpperCase
 // toLowerCase
+//test
 
 trim(myName)
