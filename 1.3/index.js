@@ -20,9 +20,9 @@ function trim(string) {
     console.log(string.trim());
 }
 
-substring
-replace
-toUpperCase
-toLowerCase
+// substring
+// replace
+// toUpperCase
+// toLowerCase
 
 trim(myName)
