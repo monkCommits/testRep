@@ -24,6 +24,57 @@ function trim(string) {
 // replace
 // toUpperCase
 // toLowerCase
-//test
 
-trim(myName)
+//array
+
+const arr = [1,2,3]
+
+function logThing(string) {
+    console.log(string);
+}
+// arr.forEach(logThing)
+
+//class
+
+class Animal {
+    constructor(name, legCount, speaks){
+        this.name = name;
+        this.legCount = legCount;
+        this.speaks = speaks;
+    }
+    speak(){
+        console.log(this.name + " speaks " + this.speaks );
+    }
+}
+
+const dog = new Animal("dog",4,"bow-bhow");
+const monkey = new Animal("monkey", 2, "chee chee")
+
+// traditional way of making object
+// const dog = {
+//     name : "dog",
+//     legCpunt : 4,
+//     speaks : "bhow-bhow",
+//     speak(){
+//         console.log(this.name + " speaks " + this.speaks);
+//     }
+// }
+
+// dog.speak()
+
+// json
+const user = {
+    name : "monk",
+    gender : 'male',
+    role : 'dev',
+    intro(){
+        console.log("hi am ", this.name , " a ", this.role);
+    }
+}
+
+// console.log(JSON.stringify(user));
+
+console.log(user.hasOwnProperty("intro"));
+
+let newObj = Object.assign({},user, {test1 : "value1", test2 : "value2"})
+console.log(newObj);
